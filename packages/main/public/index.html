@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<!-- <script src="/global-config/lib/requirejs/development.js"></script> -->
+		<div id="root"></div>
+		<!-- ----------------------------------------------------------------------- -->
+		<!--                                  init                                   -->
+		<!-- ----------------------------------------------------------------------- -->
+		<script type="module">
+			import { webpackExternals } from '/cdn/global-config/index.js';
+			Promise.all(webpackExternals.map(external => import(external.cdn))).then(() => {
+				import("./main.js"); // TODO: Hash
+			});
+			// requirejs.config({
+			// 	baseUrl: '/',
+			// 	paths: webpackExternals.reduce((acc, cur) => {
+			// 		acc[cur.name] = '/cdn' + cur.cdn.match(/(.+)(\.js$)/)[1];
+			// 		return acc;
+			// 	}, {})
+			// });
+			// require(['react', 'react-dom'], (React, ReactDOM) => {
+			// 	require(['/main.js']);
+			// })
+		</script>
+	</body>
+</html>

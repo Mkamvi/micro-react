@@ -1,0 +1,11 @@
+{
+  "name": "global-components",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/micro-react/global-compoents.git",
+  "author": "iWuzhi <2461358597@qq.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.0.2"
+  }
+}
