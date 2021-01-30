@@ -4,16 +4,12 @@
  */
 
 import React from 'react';
-import { Button } from 'gk-rc';
+import { Button } from 'mr-ui-components';
 
-interface IProps {
-
-}
+interface IProps {}
 
 const App: React.FC<IProps> = () => {
-  return (
-    <Button>你好</Button>
-  )
-}
+  return <Button>你好</Button>;
+};
 
 export default App;

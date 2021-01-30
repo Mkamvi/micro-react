@@ -1,10 +1,12 @@
 {
 	"name": "root",
-	"private": true,
+  "private": true,
+  "workspaces": ["packages/*"],
 	"scripts": {
     "start:tpl-app": "lerna run  --scope template-app start --stream",
-    "start:ui-comp": "lerna run --scope mr-ui-components start --stream"
-	},
+    "start:ui-comp": "lerna run --scope mr-ui-components start --stream",
+    "start:app-main": "lerna run --scope mr-app-main start --stream"
+  },
 	"devDependencies": {
 		"lerna": "^3.22.1"
 	}
