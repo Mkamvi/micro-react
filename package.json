@@ -2,7 +2,8 @@
 	"name": "root",
 	"private": true,
 	"scripts": {
-		"start:tpl-app": "lerna run --scope template-app start"
+    "start:tpl-app": "lerna run  --scope template-app start --stream",
+    "start:ui-comp": "lerna run --scope mr-ui-components start --stream"
 	},
 	"devDependencies": {
 		"lerna": "^3.22.1"

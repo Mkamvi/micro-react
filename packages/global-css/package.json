@@ -1,7 +1,10 @@
 {
   "name": "mr-global-css",
   "version": "1.0.0",
-  "description": "",
+  "description": "Globa CSS for micro-react.",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "start": "webpack serve",
     "build": "npm run build:less && NODE_ENV=production node ./scripts/postcss.js",

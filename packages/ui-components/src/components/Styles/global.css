@@ -1,0 +1,6 @@
+@import 'mr-global-css/dist/index.css';
+
+html,
+body {
+  height: 100%;
+}
