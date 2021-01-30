@@ -1,6 +1,6 @@
 /*.js
 /*.json
 /config/*
-/dist
+/dist/**/*
 /lib
-/node_modules
+/node_modules/**/*

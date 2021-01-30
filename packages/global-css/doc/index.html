@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GLOBAL CSS</title>
+  </head>
+  <body class="container mx-auto p-8 min-h-screen text-sm">
+    <header
+      class="border-4 rounded-lg border-double border-green-100 font-sans antialiased italic tracking-wide text-blue-600 text-4xl h-16 flex flex-auto items-center justify-center"
+    >
+      GLOBAL CSS
+    </header>
+    <main class="mt-6 container">
+      <!-- -------------------------------- What --------------------------------- -->
+      <section>
+        <h3 class="text-2xl text-blue-600">什么是 GLOBAL CSS？</h3>
+        <p class="py-2 text-gray-500">
+          Global
+          CSS是micro-react的一部分，用来共享全局的CSS，作用于主应用(app-main)、子应用(app-*)及业务共享的组件库(ui-component)。
+          目的是在开发组件库、子应用亦或主应用时拥有统一的全局样式环境，避免由于开发环境样式的不一致导致的调整。
+          目前集成了
+          <a class="text-green-400" href="//tailwindcss.com"> tailwindcss</a
+          >，可基于tailwindcss做快速的功能开发。
+        </p>
+      </section>
+
+      <!-- -------------------------------- 使用手册 --------------------------------- -->
+      <section class="mt-4">
+        <h3 class="text-2xl text-blue-600">Tailwindcss</h3>
+        <p class="py-2 text-gray-500">
+          使用详情请去查看官方文档(<a href="//tailwindcss.com" class="text-green-400"
+            >https://tailwindcss.com</a
+          >)或自行搜索相关资源。
+        </p>
+      </section>
+      <section class="mt-4">
+        <h3 class="text-2xl text-blue-600">Customize</h3>
+        <p class="py-2 text-gray-500">暂时还没有自定义的功能，新增功能时请在这里添加相应文档....</p>
+      </section>
+
+      <!-- --------------------------------- 开发 --------------------------------- -->
+      </section>
+      <section class="mt-4">
+        <h3 class="text-2xl text-blue-600">开发GLOBAL CSS</h3>
+        <ol class="p-4">
+          <li class="list-decimal">启动服务：npm run start</li>
+          <li class="list-decimal">打包：npm run build</li>
+        </ol>
+      </section>
+      
+      <section class="mt-4">
+        <h3 class="text-2xl text-blue-600">TODO:</h3>
+        <ol class="p-4">
+          <li class="list-decimal">lerna发布流程还未完成</li>
+          <li class="list-decimal">是否要单独提供customization文档</li>
+          <li class="list-decimal">是否要提供一个Playground供调试</li>
+        </ol>
+      </section>
+    </main>
+  </body>
+</html>
