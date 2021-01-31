@@ -25,4 +25,7 @@ module.exports = merge(base, {
       }  
     ]
   },
+  devServer: {
+    port: 4000
+  }
 });

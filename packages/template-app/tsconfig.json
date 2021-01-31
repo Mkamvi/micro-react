@@ -1,11 +1,10 @@
 {
   "include": [
-    "src/**/*"
+    "./src/"
   ],
   "exclude": [
-    "src/doc/**/*",
-    "**/__test__/**/*",
-    "**/__test__/**/*.test.*",
+    "**/__test__/",
+    "**/*.test.*",
   ],
   "compilerOptions": {
     "outDir": "lib",
@@ -15,10 +14,10 @@
     "moduleResolution": "node",
     "jsx": "react",
     "allowSyntheticDefaultImports": true,
-    "baseUrl": ".",
+    "baseUrl": "./",
     "declaration": true,
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["./src/*"]
     }
   }
 }

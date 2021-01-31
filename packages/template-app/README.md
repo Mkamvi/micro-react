@@ -1,25 +1,11 @@
 
-# 快速开始
+# APP MAIN
+### 什么是app main？
+App main是micro-react的一部分，是整个应用的入口(主应用)，集成了axios、mockjs等业务需要能力。
 
+### 快速开始
 
-### 安装
-```
-npm i gk-rc --save
-```
+> npm run main  // port: 4000
+### TODO
+1. 通用业务util抽离到global-utils
 
-
-### 示例
-*引入样式*
-```
-@import 'gk-rc/dist/style.css';
-```
-
-*使用组件*
-```
-import { Button } from 'gk-rc';
-
-ReactDOM.render(<Button>你好啊</Button>, mountNode);
-```
-
-### 示例模板
-https://github.com/iWuzhi/gk-rc-demo

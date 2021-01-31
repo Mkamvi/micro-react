@@ -1,1 +1,3 @@
-@import 'gk-rc/dist/style.css';
+#root {
+  height: 100%;
+}
