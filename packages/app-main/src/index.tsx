@@ -7,7 +7,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import App from './views';
+import MainStore from '@/models';
 
 import './index.css';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+/* --------------------------------- MockJS --------------------------------- */
+require('./__mocks__');
+
+ReactDOM.render(<App store={MainStore} />, document.getElementById('root'));

@@ -1,9 +1,5 @@
-import request from '@/utils';
-import pluginService from '@/plugins/service';
+import { request } from '../utils';
 
-export const getTodos = (): Promise<Record<string, unknown>> => {
-  return request.get('/todos');
+export const getUserInfo = (): Promise<Record<string, unknown>> => {
+  return request.get('/api/getUserInfo').then((res) => res.data);
 };
-
-/* --------------------------------- Plugin --------------------------------- */
-// pluginService

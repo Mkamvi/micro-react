@@ -1,5 +1,5 @@
 {
-  "name": "mc-global-state",
+  "name": "mr-global-state",
   "version": "1.0.0",
   "description": "Global states for micro react.",
   "main": "lib/index.js",
